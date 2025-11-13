@@ -2,7 +2,7 @@
 
 - ## 정보
     - 과목 : HTML
-    - 난이도 : 0.5 / 5
+    - 난이도 : 0.5 / 5.0
     - 메모 : HTML의 기본
 
 - ## 기본적인 구조
@@ -11,7 +11,7 @@
     <html lang="ko"> <!-- lang 속성으로 주 언어를 명시한다. -->
     <head> <!-- meta, title, link, style, script 태그를 작성한다. -->
         <meta charset="UTF-8"> <!-- charset 속성으로 인크립 방식을 지정한다. [필수] -->
-        <title>애국가</title> <!-- HTML 파일의 제목을 설정한다. [필수] -->
+        <title>제목</title> <!-- HTML 파일의 제목을 설정한다. [필수] -->
         <link> <!-- 외부 CSS 파일을 가져온다. -->
         <style></style> <!-- css를 작성하여 스타일을 부여한다. -->
         <script></script><!-- js을 실행시키거나, 외부 js 파일을 가져온다.-->
