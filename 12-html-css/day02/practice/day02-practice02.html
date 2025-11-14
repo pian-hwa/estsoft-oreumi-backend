@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+
+        ul > li > ul > li.color-red {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>여행지 정보</h1>
+    
+    <ul>
+        <li>
+            국내
+
+            <ul>
+                <li>제주도</li>
+                <li>강릉</li>
+                <li class="color-red">여수</li>
+            </ul>
+        </li>
+
+        <li>
+            해외
+
+            <ul>
+                <li>광</li>
+                <li class="color-red">발리</li>
+                <li>파리</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
