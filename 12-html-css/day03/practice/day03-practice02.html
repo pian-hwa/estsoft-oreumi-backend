@@ -5,24 +5,24 @@
     <title>CSS Properties</title>
     <style>
 
-        div {
+        div.box {
+            box-sizing: border-box;
             margin: 0 auto;
+            padding: 20px;
             border: 3px solid black;
         }
 
-        #yellowgreen {
+        #outer {
             background-color: yellowgreen;
             width: 600px;
-            padding: 20px;
         }
 
-        #gold {
+        #outer > div {
             background-color: gold;
             width: 400px;
-            padding: 20px;
         }
 
-        #hotpink {
+        #outer > div > div {
             background-color: hotpink;
             width: 200px;
             height: 200px;
@@ -32,9 +32,9 @@
 </head>
 <body>
     
-    <div id="yellowgreen">
-        <div id="gold">
-            <div id="hotpink"></div>
+    <div id="outer" class="box">
+        <div class="box">
+            <div class="box"></div>
         </div>
     </div>
 
