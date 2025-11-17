@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML/CSS Example</title>
+        <style>
+
+            /* ------------------------------------------------------------ */
+            /* .bg-gray 요소들에 배경색을 지정 */
+            .bg-gray {
+                background-color: darkgray;
+            }
+
+            /* ------------------------------------------------------------ */
+            /* 상태 선택자 */
+            #title:active { background-color: yellowgreen; }
+            #title:hover { color: red; }
+
+            tr:hover > td { background-color: hotpink; }
+            td:hover { color: red; }
+
+            /* ------------------------------------------------------------ */
+            /* 구조 선택자 */
+            /*
+            #list > li:nth-child(3n+2) { color: red; }
+            #list > li:first-child { background-color: yellowgreen; }
+            #list > li:nth-child(1) { font-weight: bold; }
+            #list > li:nth-child(3n) { color: blue; }
+            */
+
+            /* <li> 요소의 형제 요소들 중에서 홀수 번째 요소를 선택 */
+            /*
+            li:nth-child(odd) { color: red; }
+            */
+
+            /* <h1> 요소의 형제 요소들(부모 요소가 같은 자식 요소들) 중에서 첫 번째 요소를 선택 */
+            h1:first-child { color: red; }
+            h1:nth-child(2) { color: blue; }
+
+            /* 형태 구조 선택자 */
+            h1:first-of-type { background-color: yellowgreen; }
+
+            /* ------------------------------------------------------------ */
+            /* 전후 문자 선택자 */
+            #title::before {
+                content: "대한민국";
+                color: red;
+            }
+
+            #title::after {
+                content: "표";
+            }
+
+            /* ------------------------------------------------------------ */
+            /* 반응 문자 선택자 */
+            #title::selection {
+                background-color: black;
+                color: gold;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <ol>
+            <li>Item #1-1</li>
+            <li>Item #1-2</li>
+            <li>Item #1-3</li>
+            <li>Item #1-4</li>
+            <li>Item #1-5</li>
+        </ol>
+
+        <h1>List</h1>
+
+        <ol id="list">
+            <li>Item #2-1</li>
+            <li>Item #2-2</li>
+            <li>Item #2-3</li>
+            <li>Item #2-4</li>
+            <li>Item #2-5</li>
+        </ol>
+
+        <h1 id="title">천하대학교 웹학과 성적</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                    <th>jQuery</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">김철수</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>박영희</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">홍길동</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
