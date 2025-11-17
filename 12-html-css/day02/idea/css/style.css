@@ -19,8 +19,8 @@ body.light {
     margin-top: 54px;
 }
 
-#mode p button,
-#mode p input {
+#mode > p > button,
+#mode > p > input {
     padding: .4em 1.2em;
     background: transparent;
     border: none;
@@ -28,17 +28,17 @@ body.light {
     cursor: pointer;
 }
 
-#mode p input {
+#mode > p > input {
     color: #9a9a9a;
     border-bottom: 1px solid #9a9a9a;
 }
 
-body.dark #mode p button {
+body.dark #mode > p > button {
     color: #ddd;
     border-bottom: 2px solid #ddd;
 }
 
-body.light #mode p button {
+body.light > #mode > p > button {
     color: #323232;
     border-bottom: 2px solid #323232;
 }
@@ -51,18 +51,18 @@ body.light #mode p button {
     align-items: center;
 }
 
-#search h1 {
+#search > h1 {
     font-size: 4.2em;
     font-weight: bold;
     color: transparent;
     margin: 0 0 1.6rem .2em;
 }
 
-body.dark #search h1 {
+body.dark #search > h1 {
     -webkit-text-stroke: 1px #ddd;
 }
 
-body.light #search h1 {
+body.light #search > h1 {
     -webkit-text-stroke: 1px #323232;
 }
 
@@ -123,22 +123,22 @@ dl {
     text-align: center;
 }
 
-dl dt,
-dl dd {
+dl > dt,
+dl > dd {
     font-size: .9em;
     margin: 0;
 }
 
-dl dt {
+dl > dt {
     font-weight: bold;
 }
 
-body.dark dl dd {
+body.dark dl > dd {
     font-size: .8em;
     color: #9a9a9a;
 }
 
-body.light dl dd {
+body.light dl > dd {
     font-size: .8em;
     color: #545454;
 }
