@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS Example</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        body {
+            background-color: #171717;
+            color: #ccc;
+        }
+
+        /* ------------------------------------------------------------ */
+        .dummy {
+            border: 2px solid green;
+            background-color: #204820;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            border: 2px solid blue;
+            background-color: #202048;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #container > div {
+            width: 100px;
+            /* height: 100px; */
+            border: 2px solid red;
+            background-color: #482020;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+
+        /* ------------------------------------------------------------ */
+        #top {
+            /*
+                * position: fixed;
+                * → 컨테이닝 블록(containing block): 브라우저 화면(viewport)
+                * → 기준 영역(reference block): 컨테이닝 블록
+                */
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: deeppink;
+
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* ------------------------------------------------------------ */
+        #container > div {
+            /*
+                * position: relative;
+                * → 컨테이닝 블록: 가장 가까운 블록 레벨 조상 요소의 context-box
+                * → 기준 영역: 문서의 일반적인 흐름에 따라 배치됐을 때의 영역(normal postion)
+                *
+                * HTML 요소를 상대적인 위치에 배치하면, HTML 요소가 다른 위치에 표시되더라도
+                * 다른 HTML 요소에게 영향을 주지 않는다.
+                */
+            position: relative;
+        }
+
+        #container > div:nth-child(1) { top: 50px; left: 50px; }
+        #container > div:nth-child(2) { top: 100px; left: 100px; }
+        #container > div:nth-child(3) { top: 150px; left: 150px; }
+
+        /* ------------------------------------------------------------ */
+        #container > div {
+            /*
+                * position: absolute;
+                * → 컨테이닝 블록: 1. 조상 요소 중에서 가장 가까운 위치 지정 요소의 padding-box
+                *                2. 초기 컨테이닝 블록(initial containing block)
+                * → 기준 영역: 컨테이닝 블록
+                */
+            position: absolute;
+        }
+
+        #container {
+            /*
+                * 후손 요소 중에서 position 스타일 속성이 "absolute"인 요소의 컨테이닝 블록이 되도록
+                * 위치 지정 요소로 설정
+                */
+            position: relative;
+
+            /*
+                * 절대 위치 지정 요소는 문서의 일반적인 흐름에서 제거되기 때문에,
+                * 기존 컨테이닝 블록의 콘텐츠로 인식되지 않는다.
+                */
+            height: 300px;
+        }
+
+        /* z-index 스타일 속성: 위치 지정 요소의 쌓이는 순서(stacking order)를 설정 */
+        #container > div:nth-child(1) { z-index: 30; }
+        #container > div:nth-child(2) { z-index: 20; }
+        #container > div:nth-child(3) { z-index: 10; }
+
+    </style>
+</head>
+<body>
+
+    <a href="#" id="top">TOP</a>
+
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+
+    <div id="container">
+        <div>BOX #1</div>
+        <div>BOX #2</div>
+        <div>BOX #3</div>
+    </div>
+
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+    <div class="dummy">DUMMY</div>
+
+</body>
+</html>
