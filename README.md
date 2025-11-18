@@ -3,7 +3,7 @@
 - Attendence: 5 / 91 days
 
 ## Quick Acess
-- [All Commets](https://github.com/pian-hwa/estsoft-oreumi-backend/commits/main/12-html-css)
+- [All Commits](https://github.com/pian-hwa/estsoft-oreumi-backend/commits/main/12-html-css)
   
 - [12-html-css](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css)
   - [day01](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day01)
