@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Properties</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            height: 400px;
+            margin: 10px;
+
+            border: 3px solid green;
+            background-color: #efe;
+
+            position: relative;
+        }
+
+        #container > div {
+            height: 100px; width: 200px;
+            margin: 10px;
+
+            border: 3px solid red;
+            background-color: #fee;
+
+            font: bold 1.2em / 100px center normal;
+            text-align: center;
+
+            position: absolute;
+        }
+
+        #container > div:nth-child(1) { top: 0; left: 0; }
+        #container > div:nth-child(2) { top: 0; right: 0; }
+        #container > div:nth-child(4) { bottom: 0; left: 0; }
+        #container > div:nth-child(5) { bottom: 0; right: 0; }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div>BOX #1</div>
+        <div>BOX #2</div>
+        <div>BOX #3</div>
+        <div>BOX #4</div>
+        <div>BOX #5</div>
+    </div>
+
+</body>
+</html>
