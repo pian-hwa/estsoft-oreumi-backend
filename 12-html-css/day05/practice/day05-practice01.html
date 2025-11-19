@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+
+        #container, #wrap {
+            display: flex;
+            gap: 20px;
+        }
+
+        #container {
+            width: 420px;
+            margin: 20px auto;
+            padding: 20px;
+
+            border: 2px solid #333;
+        }
+
+        #wrap {
+            flex-wrap: wrap; /* flex-direction: column; */
+
+            width: 200px;
+        }
+
+        #wrap > div { line-height: 90px; }
+
+        div.box {
+            width: 200px;
+
+            font: bold 1.2em normal;
+            text-align: center;
+        }
+
+        #pink { background-color: pink; }
+        #yellowgreen { background-color: yellowgreen; }
+
+        #gold {
+            background-color: gold;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="wrap">
+            <div id="pink" class="box">Pink</div>
+            <div id="yellowgreen" class="box">Yellowgreen</div>
+        </div> <!-- /#wrap -->
+
+        <div id="gold" class="box">Gold</div>
+    </div> <!-- /#container -->
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+
+        body {
+            background-color: antiquewhite;
+
+            color: #323232;
+            font: 1em / 1.6 normal;
+        }
+
+        #document {
+            width: 1080px;
+            margin: 160px auto;
+            word-break: keep-all;
+        }
+
+        #document > h1 {
+            font-size: 2.6em;
+            font-weight: bolder;
+            line-height: 3.2;
+        }
+
+        #document > p { line-height: 2.2; }
+
+        #overlay-background {
+            position: fixed;
+            top: 0; left: 0;
+            height: 100vh; width: 100vw;
+
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #overlay {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 340px;
+
+            background-color: lightgray;
+            border: 3px solid lightgray;
+        }
+
+        #overlay-head {
+            background-color: #646464;
+
+            color: white;
+            font-size: 1.6em;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        #overlay-body {
+            font-weight: 600;
+            margin: 32px 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="overlay-background">
+        <div id="overlay">
+            <div id="overlay-head">Alert!</div>
+            <p id="overlay-body">
+                이것은 메시지 창입니다.<br>
+                오버레이 레이어 위에 올라와있습니다.<br>
+                그래서 오버레이 레이어와 함께 나타났다 사라집니다.
+            </p><!-- /#overlay-body -->
+        </div> <!-- /#overlay -->
+    </div> <!-- /#overlay-background -->
+
+    <div id="document">
+        <h1>Lorem ipsum dolor sit amet</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tristique sapien, non ullamcorper nisl ultricies vitae. Praesent scelerisque magna quis congue fringilla. Ut aliquet mauris et orci ultrices, id tristique orci viverra. Aliquam erat volutpat. Maecenas convallis leo vel mi tristique suscipit. Duis in lectus erat. Pellentesque non libero mi. Aenean et libero maximus, interdum nisl quis, venenatis enim. Proin dui elit, gravida non aliquet ac, varius eu ipsum. Sed gravida leo quis erat pretium suscipit. Mauris eu ante ut lectus rutrum posuere. In mattis est at est tempus elementum. Ut ut viverra sapien. Ut cursus fringilla erat in gravida. Donec ut tempor metus.
+            In porta massa vel vestibulum volutpat. Suspendisse sollicitudin mi ligula, sit amet auctor velit fermentum sed. Donec auctor interdum massa. Nunc porttitor ante eu sagittis vehicula. Aenean semper, erat ac elementum facilisis, libero mi sagittis diam, eget congue sapien risus sed orci. Nulla dapibus lorem ac arcu sollicitudin, id eleifend massa luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque mollis justo ac magna hendrerit consectetur.
+            Fusce nec justo ut eros feugiat efficitur eget ut sapien. Sed tincidunt, tellus at iaculis bibendum, erat urna ullamcorper odio, suscipit fringilla tellus urna eget elit. Duis odio nulla, efficitur sit amet nisl eu, rhoncus dictum massa. Nulla mattis erat nec sollicitudin rhoncus. Nulla ornare, metus eget fringilla blandit, turpis lorem vestibulum ipsum, a convallis nisi massa at est. Morbi mauris sapien, mattis vel justo eu, condimentum tempus dui. Donec lorem augue, dignissim quis tempus in, iaculis at tellus. Maecenas tempus est id ultrices malesuada. Nam ac nisl purus. Proin sed suscipit lectus, eget posuere ex. Vestibulum ac orci felis. Quisque a sapien convallis, tincidunt lacus vel, eleifend odio. Duis dapibus odio vel massa ornare, ut convallis lacus commodo. Quisque nec arcu enim. Donec pretium risus sit amet nulla pulvinar, ut ultrices velit tincidunt.
+            Suspendisse tortor risus, hendrerit sed imperdiet at, mattis et ante. Vestibulum tincidunt tellus libero, id iaculis ex scelerisque non. Nulla ullamcorper bibendum mollis. Maecenas efficitur velit nibh, ultrices cursus ante semper eget. Donec tincidunt dui at odio sollicitudin mollis. Quisque suscipit volutpat mattis. Ut vestibulum, diam at aliquam interdum, quam nisl molestie orci, in rutrum justo arcu sit amet nibh. Duis laoreet aliquet erat, vitae convallis sapien congue ut.
+            Phasellus semper ullamcorper dui, vitae suscipit nisl dapibus eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer nec libero accumsan, faucibus tortor eget, interdum ante. Quisque laoreet orci eros. Curabitur pulvinar luctus tellus, nec tempus lacus hendrerit vel. Proin eu dapibus risus. In vulputate congue mauris, sit amet efficitur diam pellentesque quis. Nam non pellentesque nisl. Nunc id augue lectus. Mauris lorem neque, congue non dictum ut, laoreet eget nisi. Donec placerat tincidunt ligula, et suscipit ex. Praesent sagittis lobortis tortor eu bibendum. Ut in scelerisque mauris. Integer pellentesque lacus felis, vel auctor tellus congue tincidunt.
+        </p>
+    </div> <!-- /#document -->
+
+</body>
+</html>
