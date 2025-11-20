@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<body>
+
+    <script>
+        var width, height, area, perimeter;
+        width = 25;
+        height = 15;
+
+        area = width * height;
+        perimeter = 2 * (width + height);
+
+        console.groupCollapsed("Ex-01");
+
+        console.log("width = " + width);
+        console.log("height = " + height);
+        console.log("area = " + area);
+        console.log("perimeter = " + perimeter);
+
+        console.groupEnd();
+    </script>
+
+    <script>
+        var num = 26;
+
+        console.group("Ex-02");
+
+        if (num > 20)  {
+            console.log("Hello World!");
+        }
+
+        console.groupEnd();
+    </script>
+
+    <script>
+        var num = 26;
+
+        console.group("Ex-02");
+
+        if (num > 20 && num < 40)  {
+            console.log("Carpe Diem!");
+        }
+
+        console.groupEnd();
+    </script>
+
+</body>
+</html>
