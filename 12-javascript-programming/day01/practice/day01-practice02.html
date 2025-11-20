@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>One True Layout</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        #container {
+            width: 1080px;
+            margin: 0 auto;
+        }
+
+        #header, #navigation { text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); }
+        #header > h1 {
+            margin-left: 26px;
+            font: 900 2em / 3.4 normal;
+        }
+
+        #navigation {
+            display: flex;
+            justify-content: space-between;
+
+            background-color: #585858;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+            color: #eee;
+        }
+
+        #navigation > ul { display: flex; }
+        #navigation > ul > li { margin: 18px 30px; }
+
+        #wrap {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #sidebar {
+            width: 200px;
+            margin-top: 6px;
+            padding-top: 14px;
+            box-sizing: border-box;
+
+            border-right: 1px solid #bbb;
+        }
+        
+        #sidebar > ul > li {
+            padding: 10px 20px;
+            font-size: .92em;
+        }
+
+        #content {
+            width: calc(100% - 200px);
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+        #content > h1 { font: 800 1.4em / 1.6 normal; margin-top: 8px; }
+        #content > p { font: .88em / 1.8 normal; }
+        #content > h1, #content > p:not(:last-child) { margin-bottom: 20px; }
+
+        #footer {
+            float: right;
+            font: .92em / 100px normal;
+            margin-right: 48px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+        <header id="header">
+            <h1>One-True Layout</h1>
+        </header>
+
+        <nav id="navigation">
+            <ul>
+                <li>Home</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+
+            <ul>
+                <li>Log in</li>
+                <li>Sign up</li>
+            </ul>
+        </nav>
+
+        <div id="wrap">
+            <aside id="sidebar">
+                <ul>
+                    <li>Home</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+            </aside>
+
+            <main id="content">
+                <h1>Lorem ipsum dolor sit amet</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipi scing elit.
+                    Mauris quis tris tique eros, vel plac suada erat eros.
+                    Pellen tesque habi tant morbi tris tique sene ctus et et.
+                    Male suada fames ac turpis stie hend rerit netus egestas.
+                    Vivamus aliquet cons equat dolor, vitae accum san mi amet.
+                    Suspen disse phar etra mole stie lacus vitae fer mentum.
+                    Sed effi citur condi mentum sceler inar isque egestas.
+                </p>
+
+                <p>
+                    Phasellus quis condi mentum erat, neque in vivea aliquam.
+                    Quisque eget nunc et nisi lobo rtis pellen tesque ac eu.
+                    Fusce ac odio eu risus iac ulis mole stie con vallis ac.
+                    Nullam viverra neque in aliquam tris tique cursus ipsum.
+                    Suspen disse phar etra mole stie lacus vitae fer mentum.
+                    Prae sent eu effi citur ornare mi nec elem entum ipsum.
+                    Quisque eu quam sed metus fauc ibus pellen tesque vel ut.
+                </p>
+
+                <p>
+                    Vivamus aliquet cons equat dolor, vitae accum san mi hend.
+                    Sed sed libero vel nisi maximus luctus et vel tellus.
+                    Nullam cursus justo quis diam auctor, vitae cidunt consec.
+                    Vitae cidut id ante vehi dolor, vitae acum san hend rerit.
+                    Cidunt tin cidunt ante vehi cula. Aenean quis dolor justo.
+                    Suspen disse phar etra mole stie lacus vitae fer mentum.
+                    Nam conv allis dolor vitae ult ricies rerit amet lectus.
+                </p>
+            </main>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; 2016-2024 Cheonha University.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
