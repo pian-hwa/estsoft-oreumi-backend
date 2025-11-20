@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="../../reset.css">
+</head>
+<body>
+
+    <script>
+        var radius = 10;
+        var pi = 3.14;
+        var area;
+
+        area = pi * radius * radius;
+
+        console.group("practice01");
+
+        console.log("area of the circle = ", area);
+
+        console.groupEnd();
+    </script>
+
+    <script>
+        var num = 51;
+        // var num = 5;
+        // var num = 26;
+
+        console.group("practice02");
+
+        if (num < 20 || num > 40) console.log("Dream comes true!");
+
+        console.groupEnd();
+    </script>
+
+    <script>
+        var n1 = 21, n2 = 9;
+
+        console.group("practice03");
+
+        console.log("The greater of " + n1 + " and " + n2 + " = " + (n1 > n2 ? n1 : n2));
+
+        console.groupEnd();
+    </script>
+
+</body>
+</html>
