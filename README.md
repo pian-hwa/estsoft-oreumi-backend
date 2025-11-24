@@ -58,10 +58,15 @@
 > - 각종 연산자
 > - `if` 구문
 
+> **2일차** `2025-11-12` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12=javascript-programming/day02)
+> - `else` 구문
+> - `else if` 구문
+> - 반복문 `for`
+
 ## 마지막 상태
 > | 항목 |    상태   |
 > | :-: | :-: |
-> | 날짜 | 2025-11-20 |
+> | 날짜 | 2025-11-24 |
 > | 입실 | 08:51 |
 > | 퇴실 | - |
 

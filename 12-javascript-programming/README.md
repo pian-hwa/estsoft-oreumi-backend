@@ -10,5 +10,15 @@
 >
 > **To-Do 리스트**
 > - [x] TIL
+> - [X] 복습
+> - [X] 연습 문서 만들기
+
+> **2일차** `2025-11-12` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12=javascript-programming/day02)
+> - `else` 구문
+> - `else if` 구문
+> - 반복문 `for`
+>
+> **To-Do 리스트**
+> - [x] TIL
 > - [ ] 복습
 > - [ ] 연습 문서 만들기
