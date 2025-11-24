@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+    <link rel="stylesheet" href="../../reset.css">
+</head>
+<body>
+
+    <script>
+
+        console.group("Practice-01");
+
+        for (var i = 0; i < 8; i++) {
+            console.log("margin-top: %dpx;", i * 50);
+        }
+
+        console.groupEnd();
+
+    </script>
+
+    <script>
+
+        console.group("Practice-02");
+
+        for (var i = 0; i < 2; i++) {
+            for (var j = 0; j < 4; j++) {
+                console.log("margin-top: %dpx;", j * 50);
+            }
+        }
+
+        console.groupEnd();
+
+    </script>
+
+    <script>
+
+        var favorites = [ "Coffee", "Juice", "Coke", "Milk", "Tea" ];
+
+        console.group("Practice-03");
+
+        for (var i = 0; i < favorites.length; i++) {
+            if (favorites[i] === "Coke") {
+                console.log("Soft Drink");
+            } else {
+                console.log(favorites[i]);
+            }
+        }
+
+        console.groupEnd();
+
+    </script>
+
+</body>
+</html>
