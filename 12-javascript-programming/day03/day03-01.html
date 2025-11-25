@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<body>
+
+    <script>
+
+        function printName() {
+            console.log("김희성");
+        }
+
+        printName();
+
+    </script>
+
+    <script>
+
+        function greeting(name) {
+            console.log(`Hi, ${name}. Nice to meet you!`);
+        }
+
+        greeting("희성");
+        
+    </script>
+
+    <script>
+
+        function getAverage(n1, n2) {
+            return (n1 + n2) / 2;
+        }
+
+        console.log("The average of 31 and 17 = " + getAverage(31, 17));
+        
+    </script>
+
+    <script>
+
+        var rect = {
+            width: 13,
+            height: 8,
+            getArea: function () {
+                return this.width * this.height;
+            }
+        }
+
+        console.log(rect.getArea());
+        
+    </script>
+
+    <script>
+
+        setTimeout(function () {
+            console.log("pay attention!");
+        }, 3000);
+        
+    </script>
+
+    <script>
+
+        let i = 0;
+
+        setInterval(function () {
+            console.log("i = " + ++i);
+        }, 2000);
+        
+    </script>
+
+</body>
+</html>

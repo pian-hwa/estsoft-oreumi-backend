@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>practice02</title>
+    <link rel="stylesheet" href="../../reset.css">
+</head>
+<body>
+
+    <script>
+
+        const colors = [ "red", "green", "blue" ];
+
+        let i = 0;
+
+        setInterval(function () {
+            console.log(`background-color: ${colors[i++ % 3]};`);
+        }, 2000);
+
+    </script>
+
+</body>
+</html>
