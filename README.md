@@ -7,7 +7,7 @@
 > - **훈련 기간**
 >   - 2025-11-12 ~ 2026-04-01 (14회차)
 > - **출석**
->   - 7 / 91 일 (총 728시간)
+>   - 8 / 91 일 (총 728시간)
 
 ## 진행된 과정
 
@@ -37,7 +37,7 @@
 > - `CSS` 가시 속성
 > - `CSS` 배경, 글자 관련 속성
 
-> **4일차** `2025-11-17` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day04)
+> **4일차** `2025-11-18` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day04)
 > - `CSS` text 관련 속성
 > - `CSS` flex 관련 속성
 > - `CSS` position 속성
@@ -45,11 +45,11 @@
 >   - `CSS` 초기화
 >   - 크로스 브라우징
 
-> **5일차** `2025-11-17` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day05)
+> **5일차** `2025-11-19` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day05)
 > - `CSS` 마무리 (animation, transition, 반응형 웹)
 
 ### JavaScript 과정
-> **1일차** `2025-11-12` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day01)
+> **1일차** `2025-11-20` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day01)
 > - `javaScript` 개념과 역사
 > - `HTML` 문서에 `javaScript` 실행 방법
 > - 자료형
@@ -58,7 +58,7 @@
 > - 각종 연산자
 > - `if` 구문
 
-> **2일차** `2025-11-12` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day02)
+> **2일차** `2025-11-24` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day02)
 > - `else` 구문
 > - `else if` 구문
 > - 반복문 `for`
@@ -66,7 +66,7 @@
 ## 마지막 상태
 > | 항목 |    상태   |
 > | :-: | :-: |
-> | 날짜 | 2025-11-24 |
+> | 날짜 | 2025-11-25 |
 > | 입실 | 08:51 |
 > | 퇴실 | - |
 

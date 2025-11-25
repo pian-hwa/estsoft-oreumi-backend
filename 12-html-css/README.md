@@ -44,7 +44,7 @@
 > - [x] 복습
 > - [x] 연습 문서 만들기
 
-> **4일차** `2025-11-17` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day04)
+> **4일차** `2025-11-18` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day04)
 > - `CSS` text 관련 속성
 > - `CSS` flex 관련 속성
 > - `CSS` position 속성
@@ -57,7 +57,7 @@
 > - [x] 복습
 > - [x] 연습 문서 만들기
 
-> **5일차** `2025-11-17` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day05)
+> **5일차** `2025-11-19` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-html-css/day05)
 > - `CSS` 마무리 (animation, transition, 반응형 웹)
 >
 > **To-Do 리스트**
