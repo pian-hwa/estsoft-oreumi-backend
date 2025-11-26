@@ -32,5 +32,17 @@
 >
 > **To-Do 리스트**
 > - [x] TIL
+> - [X] 복습
+> - [X] 연습 문서 만들기
+
+> **4일차** `2025-11-26` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day04)
+> - `DOM` 객체 선택자
+> - 배열의 각 요소에 접근하는 반복문
+> - `innerHTML`, `innerText`, `textContent`
+> - `DOM` 객체의 `attribute` 속성 접근
+> - 스타일 부여
+>
+> **To-Do 리스트**
+> - [x] TIL
 > - [ ] 복습
 > - [ ] 연습 문서 만들기

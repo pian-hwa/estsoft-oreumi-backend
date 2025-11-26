@@ -7,7 +7,7 @@
 > - **훈련 기간**
 >   - 2025-11-12 ~ 2026-04-01 (14회차)
 > - **출석**
->   - 8 / 91 일 (총 728시간)
+>   - 9 / 91 일 (총 728시간)
 
 ## 진행된 과정
 
@@ -63,10 +63,24 @@
 > - `else if` 구문
 > - 반복문 `for`
 
+> **3일차** `2025-11-25` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day03)
+> - `let`, `const` 변수 선언
+> - `function () {}` 함수
+> - `object` 객체
+> - `window`, `document`
+> - `window`의 `setTimeout`, `setInterval`
+
+> **4일차** `2025-11-26` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day04)
+> - `DOM` 객체 선택자
+> - 배열의 각 요소에 접근하는 반복문
+> - `innerHTML`, `innerText`, `textContent`
+> - `DOM` 객체의 `attribute` 속성 접근
+> - 스타일 부여
+
 ## 마지막 상태
 > | 항목 |    상태   |
 > | :-: | :-: |
-> | 날짜 | 2025-11-25 |
+> | 날짜 | 2025-11-26 |
 > | 입실 | 08:51 |
 > | 퇴실 | - |
 
