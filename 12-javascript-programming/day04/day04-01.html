@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <style>
+        
+        #box {
+            width: 200px; height: 200px;
+            border: 2px solid #171717;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 id="hello">Hello World!</h1>
+
+    <script>
+
+        const hello = document.getElementById("hello");
+        hello.textContent = "Hello JavaScript!";
+
+    </script>
+
+    <hr>
+
+    <a href="https://www.google.com" id="search">Search engine</a>
+
+    <script>
+
+        const search = document.getElementById("search");
+        search.setAttribute("href", "https://www.naver.com");
+
+    </script>
+
+    <hr>
+
+    <h1 id="time">Time is gold.</h1>
+
+    <script>
+
+        const time = document.getElementById("time");
+
+        setTimeout(function () {
+            time.style.display = "none";
+        }, 3000);
+
+    </script>
+
+    <hr>
+
+    <h2 class="words">Time is gold.</h2>
+    <h2 class="words">No sweat, no sweet.</h2>
+    <h2 class="words">Asking costs nothing.</h2>
+
+    <script>
+
+        const words = document.querySelectorAll(".words");
+
+        words.forEach(word => {
+            word.style.color = "red";
+        })
+
+    </script>
+
+    <hr>
+
+    <ul id="list">
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.naver.com">Naver</a></li>
+        <li><a href="http://www.daum.net">Daum</a></li>
+    </ul>
+
+    <script>
+        
+        const links = document.querySelectorAll("#list > li > a");
+
+        links.forEach(link => {
+            link.innerHTML += ` (${link.href})`;
+        })
+
+    </script>
+
+    <hr>
+
+    <h1 id="best">DO YOUR BEST!</h1>
+
+    <script>
+
+        const colors = [ "red", "blue", "green", "gold" ];
+        let i = 0;
+
+        const best = document.getElementById("best");
+
+        setInterval(function () {
+            best.style.color = colors[i++ % 4];
+        }, 2000);
+        
+    </script>
+
+    <hr>
+
+    <div id="box"></div>
+
+    <script>
+
+        const box = document.getElementById("box");
+        let j = 0;
+
+        setInterval(function () {
+            box.style.marginLeft = `${200 * ++j}px`;
+        }, 2000);
+        
+    </script>
+
+</body>
+</html>
