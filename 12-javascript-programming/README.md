@@ -44,5 +44,13 @@
 >
 > **To-Do 리스트**
 > - [x] TIL
-> - [ ] 복습
-> - [ ] 연습 문서 만들기
+> - [X] 복습
+> - [X] 연습 문서 만들기
+
+> **5일차** `2025-11-27` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/12-javascript-programming/day05)
+> - 나머지 JavaScript
+>
+> **To-Do 리스트**
+> - [x] TIL
+> - [X] 복습
+> - [X] 연습 문서 만들기
