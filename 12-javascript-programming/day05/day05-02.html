@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        body {
+            background-color: #212121;
+            color: #ccc;
+        }
+
+        #container {
+            width: 240px;
+            margin: 80px auto;
+        }
+
+        #person {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #person > p {
+            display: flex;
+            align-items: center;
+        }
+
+        #name, input[value="남자"], #age {
+            margin-left: 20px;
+        }
+
+        #name, #age {
+            height: 26px;
+        }
+
+        #submit {
+            width: 100%; height: 40px;
+            font: bold 1em normal;
+        }
+
+        #result {
+            text-align: left;
+            margin: 80px auto;
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener("load", function () {
+            const name = document.getElementById("name");
+            const genders = document.getElementsByName("gender");
+            const age = document.getElementById("age");
+
+            const hello = document.getElementById("result");
+
+            document.getElementById("person").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const data = [];
+
+                // 값 처리
+                if (name.value) data[0] = name.value;
+
+                for (gender of genders) {
+                    if (gender.checked) data[1] = gender.value;
+                }
+
+                if (age.value) {
+                    data[2] = age.value;
+                    return 
+                }
+
+                hello.innerHTML = `
+                    <p>반갑습니다. ${data[0]} 님.</p>
+                    <p>${data[0]} 님은 ${data[2]}0대 ${data[1]}입니다.</p>
+                `;
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+    <div id="container">
+        <form id="person">
+
+            <p>이름: <input type="text" id="name"></p>
+
+            <p>성별: <label><input type="radio" value="남자" name="gender">남자</label><label><input type="radio" value="여자" name="gender">여자</label></p>
+
+            <p>연령대: 
+                <select id="age">
+                    <option value="10">10대</option>
+                    <option value="20">20대</option>
+                    <option value="30">30대</option>
+                    <option value="40">40대</option>
+                    <option value="50">50대</option>
+                </select>
+            </p>
+
+            <p><button type="submit" id="submit">확인</button></p>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>

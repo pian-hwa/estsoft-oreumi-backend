@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>day05</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            padding: 20px 0;
+            background-color: #121212;
+            color: #ccc;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            padding: 20px 0;
+        }
+
+        h1, a, button {
+            display: inline-block;
+            width: 300px;
+            padding: 20px; margin: 0;
+            box-sizing: border-box;
+
+            background-color: #444;
+            border: 0;
+            border-radius: .6em;
+
+            color: #eee;
+            text-align: center;
+
+            cursor: pointer;
+        }
+
+        p {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 300px;
+            gap: 20px;
+
+            margin-bottom: 20px;
+        }
+
+        #best {
+            transition: 1s;
+        }
+
+    </style>
+
+    <script>
+
+        window.onload = function () {
+            const work = document.getElementById("work");
+            const move = document.getElementById("move");
+            const reset = document.getElementById("reset");
+
+            let i = 0;
+            move.addEventListener("click", function () {
+                work.style.marginLeft = `${++i * 200}px`;
+            });
+
+            reset.addEventListener("click", function () {
+                i = 0;
+                work.style.marginLeft = null;
+            });
+        };
+
+    </script>
+</head>
+<body>
+
+    <h1 id="hello">Hello World!</h1>
+
+    <script>
+        const hello = document.getElementById("hello");
+
+        hello.onclick = function () {
+            hello.style.display = "none";
+        }
+
+    </script>
+
+    <h1 id="best">DO YOUR BEST!</h1>
+
+    <script>
+
+        const best = document.getElementById("best");
+
+        best.addEventListener( "click", function () {
+            best.style.opacity = "0";
+        })
+
+    </script>
+
+    <ul>
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.naver.com">Naver</a></li>
+        <li><a href="http://www.daum.net">Daum</a></li>
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+        <li><a href="http://www.twitter.com">Twitter</a></li>
+    </ul>
+
+    <script>
+
+        console.log(document.links);
+        for (link of document.links) {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                window.alert(link.href);
+            });
+        }
+
+    </script>
+
+    <h1 id="step">Step by step goes a long way.</h1>
+
+    <p>
+        <button type="button" id="toggle">TOGGLE</button>
+    </p>
+
+    <script>
+        const step = document.getElementById("step");
+        const button = document.getElementById("toggle");
+        let toggle = false;
+
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (toggle) {
+                step.style.color = null;
+                button.textContent = "TOGGLE";
+                toggle = false;
+            } else {
+                step.style.color = "red";
+                button.textContent = "RESET";
+                toggle = true;
+            }
+        });
+
+    </script>
+
+    <h1 id="work">WORK HARD!</h1>
+    <p>
+        <button type="button" id="move">MOVE!</button>
+        <button type="button" id="reset">RESET!</button>
+    </p>
+
+</body>
+</html>
