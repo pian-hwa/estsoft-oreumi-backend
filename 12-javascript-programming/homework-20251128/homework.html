@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Japan</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        body{
+            background: #121212;
+            color: #eee;
+            user-select: none;
+        }
+
+        #thumbnails {
+            display: flex;
+            justify-content: center;
+
+            gap: 12px;
+            margin-bottom: 120px;
+
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #thumbnails > a {
+            position: relative;
+            border: 3px solid #ccc;
+            border-radius: .6em;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #overlay {
+            position: fixed;
+            width: 100%; height: 100%;
+
+            background: rgba(0, 0, 0, 0.8);
+
+            display: none;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #overlay > img {
+            height: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+    </style>
+    <script>
+        
+        window.addEventListener("load", function () {
+            const overlay = document.getElementById("overlay");
+            const overlayImg = document.querySelector("#overlay > img");
+            const thumbnails = document.querySelectorAll("#thumbnails > a");
+
+            for (const thumb of thumbnails) {
+                thumb.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    overlayImg.src = thumb.href;
+                    overlay.style.display = "flex";
+                });
+            }
+
+            overlay.addEventListener("click", function () {
+                overlay.style.display = "none";
+            });
+        });
+        
+    </script>
+</head>
+<body>
+
+    <div id="overlay">
+        <img src="https://i.imgur.com/7Mu8BZg.png" alt="overlay">
+    </div>
+
+    <div id="thumbnails">
+        <a href="https://i.imgur.com/7Mu8BZg.png">
+            <img src="https://i.imgur.com/RDQGlFG.png" alt="thumbnail1">
+        </a>
+        <a href="https://i.imgur.com/kwD72gU.png">
+            <img src="https://i.imgur.com/VaVlu0Y.png" alt="thumbnail2">
+        </a>
+        <a href="https://i.imgur.com/qOU9yuQ.png">
+            <img src="https://i.imgur.com/AJkIaya.png" alt="thumbnail3">
+        </a>
+        <a href="https://i.imgur.com/YfsvbdE.png">
+            <img src="https://i.imgur.com/Y51UhBK.png" alt="thumbnail4">
+        </a>
+        <a href="https://i.imgur.com/3KWpPQv.png">
+            <img src="https://i.imgur.com/gbPCnTb.png" alt="thumbnail5">
+        </a>
+    </div>
+
+</body>
+</html>
