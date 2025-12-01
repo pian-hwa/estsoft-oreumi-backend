@@ -67,6 +67,10 @@
             overlay.addEventListener("click", function () {
                 overlay.style.display = "none";
             });
+
+            overlayImg.addEventListener("click", function (e) {
+                e.stopPropagation();
+            });
         });
         
     </script>
