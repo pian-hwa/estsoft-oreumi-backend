@@ -16,7 +16,10 @@ public class practice01 {
         in.close();
 
         for (int i = 2; i < num; i++) {
-            if (num % i == 0) isPrime = false;
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
         }
 
         System.out.println(num + (isPrime ? " is a prime number." : " is not a prime number."));
