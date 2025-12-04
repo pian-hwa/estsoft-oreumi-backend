@@ -33,6 +33,7 @@ public class Student {
     }
 
     public char getGrade() {
+        getAverage();
         grade = 'F';
 
         if (average >= 90) grade = 'A';
