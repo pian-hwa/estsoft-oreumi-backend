@@ -15,7 +15,7 @@ public class Student {
         setEnglish(english);
     }
 
-    public Student() { this("", 0, 0, 0); }
+    public Student() { this(null, 0, 0, 0); }
 
     public void setName(String name) { this.name = name; }
     public void setKorean(int score) { if (score > 0 && score <= 100) korean = score; }
