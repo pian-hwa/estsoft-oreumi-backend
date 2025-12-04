@@ -18,9 +18,9 @@ public class Student {
     public Student() { this(null, 0, 0, 0); }
 
     public void setName(String name) { this.name = name; }
-    public void setKorean(int score) { if (score >= 0 && score <= 100) korean = score; }
-    public void setMath(int score) { if (score >= 0 && score <= 100) math = score; }
-    public void setEnglish(int score) { if (score >= 0 && score <= 100) english = score; }
+    public void setKorean(int score) { korean = score >= 0 && score <= 100 ? score : 0; }
+    public void setMath(int score) { math = score >= 0 && score <= 100 ? score : 0; }
+    public void setEnglish(int score) { english = score >= 0 && score <= 100 ? score : 0; }
 
     public String getName() { return name; }
     public int getKorean() { return korean; }
