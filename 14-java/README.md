@@ -8,3 +8,5 @@
 > **4일차** `2025-12-03` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/14-java/src/day04)
 >
 > **5일차** `2025-12-04` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/14-java/src/day05)
+> 
+> **6일차** `2025-12-05` [`Direct`](https://github.com/pian-hwa/estsoft-oreumi-backend/tree/main/14-java/src/day06)
