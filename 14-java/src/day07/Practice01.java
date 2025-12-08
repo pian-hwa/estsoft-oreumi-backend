@@ -44,5 +44,7 @@ public class Practice01 {
                 in.nextLine();      // 버퍼를 비워야 입력되었던 오류 값이 해제됨.
             }
         }
+
+        in.close();
     }
 }
