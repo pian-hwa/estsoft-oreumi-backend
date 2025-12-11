@@ -1,14 +1,15 @@
 package day10;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Ex01 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         System.out.print("Enter a positive integer: ");
         int n = in.nextInt();
+        System.out.println();
+
         in.close();
 
         long startTime = System.nanoTime();
@@ -20,7 +21,7 @@ public class Ex01 {
 
         startTime = System.nanoTime();
         System.out.printf("The number included in the %dth episode title = %d\n",
-                n, getEpisode(n));
+                n, getEpisode2(n));
         System.out.printf("runtime = %.3fms\n",
                 (System.nanoTime() - startTime) / 1000000.0);
         System.out.println();
