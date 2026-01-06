@@ -32,7 +32,7 @@ public class Ex01 {
 
         if (n <= 0) return 0;
 
-        for (int i = 1; true; i++) {
+        for (int i = 666; true; i++) {
             String toStr = String.valueOf(i);
             if (toStr.contains("666")) {
                 count++;
@@ -54,7 +54,7 @@ public class Ex01 {
         }
     }
 
-    private static boolean check(int n) {
+    private static boolean check(long n) {
         while(n >= 666) {
             if (n % 1000 == 666) return true;
             n /= 10;

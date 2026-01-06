@@ -1,6 +1,5 @@
 package day11;
 
-
 import java.util.Arrays;
 
 public class Ex01 {
@@ -8,7 +7,7 @@ public class Ex01 {
         System.out.println(Arrays.toString(solution("banana")));
     }
 
-    /*
+    /* 기존 생각 (글자가 커지면 비효율적, 시간 복잡도 제곱)
     public static int[] solution(String s) {
         int[] answer = new int[s.length()];
 
@@ -29,6 +28,7 @@ public class Ex01 {
     }
     */
 
+    // 로직 자체를 수정 -> 영문자 소문자만 한정했을 때 가능한 방법
     public static int[] solution(String s) {
         int[] answer = new int[s.length()];
         int[] lastIndex = new int[26];
