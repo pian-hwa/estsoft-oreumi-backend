@@ -67,7 +67,7 @@ public class MultipleServlet extends HttpServlet {
 
                 output.append("</pre>");
             } catch (Exception e) {
-                output.append("<p>value is an invalid value.</p>");
+                output.append(String.format("<p> %s is an invalid value.</p>", number));
             }
         }
 
