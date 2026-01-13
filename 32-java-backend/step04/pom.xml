@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>step03</artifactId>
+    <artifactId>step04</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>step03</name>
+    <name>step04</name>
     <packaging>war</packaging>
 
     <properties>
