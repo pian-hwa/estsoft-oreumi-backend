@@ -1,4 +1,4 @@
-package com.example.step04.ex03;
+package com.example.step05.ex02;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -138,29 +138,44 @@ public class MemberDao {
     }
 
     /**
-     * members 테이블의 모든 레코드를 조회
-     *
-     * @return 조회한 레코드의 목록
+     * ResultSet 인스턴스에서 회원 목록을 생성
+     * 
+     * @return 회원 목록
      */
-    public List<MemberVo> getMemberList() {
+    private List<MemberVo> getMemberListFromResultSet() throws SQLException {
         List<MemberVo> memberList = new ArrayList<>();
 
-        try {
-            String query = "SELECT * FROM members ORDER BY id DESC";
-            executeQuery(query);
+        resultSet.beforeFirst();
 
-            while (resultSet.next()) {
-                MemberVo memberVo = new MemberVo(
+        while (resultSet.next()) {
+            MemberVo memberVo = new MemberVo(
                     resultSet.getInt("id"),
                     resultSet.getString("username"),
                     resultSet.getString("password"),
                     resultSet.getString("name"),
                     resultSet.getString("email"),
                     resultSet.getDate("created_at")
-                );
+            );
 
-                memberList.add(memberVo);
-            }
+            memberList.add(memberVo);
+        }
+
+        return memberList;
+    }
+
+    /**
+     * members 테이블의 모든 레코드를 조회
+     *
+     * @return 조회한 레코드의 목록
+     */
+    public List<MemberVo> getMemberList() {
+        List<MemberVo> memberList = null;
+
+        try {
+            String query = "SELECT * FROM members ORDER BY id DESC";
+            executeQuery(query);
+
+            memberList = getMemberListFromResultSet();
         } catch (Exception e) {
             throw new RuntimeException(e);
         } finally {
@@ -289,5 +304,28 @@ public class MemberDao {
         }
 
         return memberVo;
+    }
+
+    /**
+     * name 컬럼으로 members 테이블을 조회해서 회원 목록을 생성
+     *
+     * @param name 조회하고자 하는 회원의 이름
+     * @return 회원 목록
+     */
+    public List<MemberVo> getMemberListByName(String name) {
+        List<MemberVo> memberList = null;
+
+        try {
+            String query = String.format("SELECT * FROM members WHERE LOWER(name) LIKE '%%%s%%'", name.toLowerCase());
+            executeQuery(query);
+
+            memberList = getMemberListFromResultSet();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        } finally {
+            closeConnection();
+        }
+
+        return memberList;
     }
 }
